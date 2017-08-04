@@ -81,7 +81,7 @@ img.site_bgimage{
 .site_menu > ul{
 	float:left;
 	width:400px;
-	position:absolute;
+	
 }
 .site_menu > ul > li{
 	float:left;
