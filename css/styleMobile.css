@@ -35,7 +35,7 @@ img.site_bgimage{
 	left:15%;
 	background:#000 url(../images/loaderMobile.gif) no-repeat center center;
 	width:95%;
-	height:80%;
+	height:40%;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px 10px 10px 10px;
@@ -185,9 +185,9 @@ span.site_close:hover{
 	font-size:15px;
 	background:#fff;
 	opacity:0.95;
-	height:30px;
+	height:10px;
 	padding-bottom:30px;
-    float:right;
+        float:right;
 	color:#000;
 	background-color: rgba(255,255,255,0.75);
 
