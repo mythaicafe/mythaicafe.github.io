@@ -31,11 +31,11 @@ img.site_bgimage{
 }
 .site_loading{
 	position:fixed;
-	top:10%;
-	left:25%;
+	top:8%;
+	left:15%;
 	background:#000 url(../images/loaderMobile.gif) no-repeat center center;
-	width:50%;
-	height:50%;
+	width:95%;
+	height:80%;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px 10px 10px 10px;
@@ -80,7 +80,8 @@ img.site_bgimage{
 
 .site_menu > ul{
 	float:left;
-	
+	width:400px;
+	position:absolute;
 }
 .site_menu > ul > li{
 	float:left;
