@@ -31,7 +31,7 @@ img.site_bgimage{
 }
 .site_loading{
 	position:fixed;
-	top:20%;
+	top:10%;
 	left:25%;
 	background:#000 url(../images/loaderMobile.gif) no-repeat center center;
 	width:50%;
