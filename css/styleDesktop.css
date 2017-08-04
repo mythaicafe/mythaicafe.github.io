@@ -109,7 +109,7 @@ img.site_bgimage{
 .site_subitem{
 	width:900px;
 	height:0px; /*animate to 400px*/
-	top:50%;
+	top:45%;
 	right:100px;
 	margin-top:0px; /* animate to -200px */
 	position:fixed;
