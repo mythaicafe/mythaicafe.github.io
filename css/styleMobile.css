@@ -1,0 +1,368 @@
+@import url('reset.css');
+
+body{
+	background:#000;
+	color:#fff;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+}
+a{
+	color:#fff;
+	text-decoration:none;
+}
+a:hover{
+	color:#000;
+}
+
+img.site_bgimage{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	opacity:0.55;
+	display:none;
+}
+.site_overlay{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:repeat top left;
+}
+.site_loading{
+	position:fixed;
+	top:20%;
+	left:25%;
+	background:#000 url(../images/loaderMobile.gif) no-repeat center center;
+	width:50%;
+	height:50%;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px 10px 10px 10px;
+	z-index:99;
+	opacity:1;
+	display: none;
+}
+.site_content{
+	position:fixed;
+	height:100%;
+	width:100%;
+	top:0%;
+	left:0px;
+	margin-top:5px;
+	background-color: rgba(255,255,255,0);
+}
+
+.title_menu{
+	display:block;
+	float:left;
+	width:100%;
+	height:0px;
+	padding-top:10px;
+	font-size:50px;
+	font-weight: bolder;
+	line-height:20px;
+	margin-right:1px;
+	text-shadow:1px 1px 1px #000;
+	background-color: rgba(255,255,255,0);
+}
+
+.site_menu{
+	float:left;
+	position:absolute;
+	height:0px;
+	left: 0px;
+	width:100%;
+  	background-color: rgba(255,255,255,0.5);
+  	margin:50px;
+  	text-transform: uppercase;
+}
+
+.site_menu > ul{
+	float:left;
+	width:400px;
+	position:absolute;
+}
+.site_menu > ul > li{
+	float:left;
+	position:relative;
+	height:20px;
+	overflow:hidden;
+}
+
+.site_menu > ul > li a{
+	margin-top:0px;
+	display:inline-block;
+	height:10px;
+	padding:0px 5px;
+	text-align:center;
+	line-height:20px;
+	outline:none;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #000;
+}
+
+.site_menu > ul > li a:hover{
+	color:#000;
+
+}
+
+.site_subitem{
+	width:100%;
+	height: 0px; /*animate to 400px*/
+	top:50%;
+	right:1px;
+	margin-top:0px; /* animate to -200px */
+	position:fixed;
+	z-index:99;
+	overflow:hidden;
+	/*adding roundness to the div*/
+	border-radius: 28px 28px 28px 28px;
+	-moz-border-radius: 28px 28px 28px 28px;
+	-webkit-border-radius: 28px 28px 28px 28px;
+	border: 0px solid #000000;
+	background-color: rgba(255,255,255,0.75);
+	text-transform:none;
+}
+
+.site_subitem h2{
+	font-size:25px;
+	font-weight:bolder;
+	color:#000;
+	padding:10px 0px 0px 40px;
+	text-shadow:0px 0px 1px #000;
+}
+
+.site_subitem h3{
+	font-size:20px;
+	font-weight:bold;
+	color:#000;
+	padding: 0px;
+}
+.site_subitem p{
+	font-size:18px;
+	padding:0px 0px;
+	margin:10px;
+	color:#000;
+}
+
+.site_subitem ul{
+	padding:0px 20px;
+        color:#000;
+}
+
+.site_subitem ul li{
+	margin:0px 0px;
+}
+
+.site_subitem ul li:first-child{
+	font-size:18px;
+	text-transform:none;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+
+span.site_close{
+	float:right;
+	margin:15px;
+	width:25px;
+	height:25px;
+	cursor:pointer;
+	background:transparent url(../images/close.png) no-repeat top left;
+	opacity:.65;
+}
+
+span.site_close:hover{
+	opacity:1.0;
+}
+
+.site_footer{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	font-size:15px;
+	background:#fff;
+	opacity:0.95;
+	height:30px;
+	padding-bottom:30px;
+    float:right;
+	color:#000;
+	background-color: rgba(255,255,255,0.75);
+
+}
+
+.social_network{
+    float: right;
+    margin-right: 15px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+/*lets add some carousel for the menu*/
+
+.slides {
+    width: 95%;
+    height: 380px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { 
+	display: block;
+	padding-left:0px;
+	overflow-y:scroll;
+	overflow-x:hidden; 
+ }
+
+.slide {
+    top: 0px;
+    opacity: 0;
+    width: 75%;
+    height: 300px;
+    display: block;
+    position: absolute;
+    transform: scale(1);
+    transition: all .7s ease-in-out;
+}
+
+.slide ul{
+	overflow-y: scroll;
+	overflow-x:none;
+	position: absolute;
+}
+
+
+#nav {
+  position: relative;
+  top: 10px;
+  left: -5px;
+  right: 30px;
+  height:0px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.nav label {
+    width: 200px;
+    height:  0%;
+    position: fixed;	 
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 90pt;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.8; display:none; } 
+}
+
+.nav label:hover { opacity: 1; display:none; }
+
+.nav .next { right: 0; display:none; }
+
+input:checked + .slide-container  .slide {
+    opacity: .7;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: none;}
+
+.nav-dots {
+	width: 100%;
+    top: 0px;
+	height: 0px;
+	display: block;
+	position: absolute;
+	text-align: center;
+	width: 200px;
+ 	height: 20px;
+  	left: 40%;
+  	top: 0%;
+
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 6px;
+	height: 6px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7{
+	background: rgba(169,169,169,169);
+}
+
+.mapouter{
+	overflow:hidden;
+	position: absolute;
+	
+}
+
+.gmap_canvas {
+	height:250px;
+	width: 300px;
+	bottom:100px;
+}
+
+.lunch_menu{
+	overflow-y:scroll;
+	overflow-x:hidden; 
+	height:400px; 
+	width: 95%; 
+	padding-left: -5px; 
+	padding-bottom:10px;
+	text-transform: none; 
+}
+
+.lunch_menu > ul > li a{
+	margin-top:60px;
+	display:block;
+	height:90px;
+	padding:0px 10px;
+	text-align:center;
+	line-height:100px;
+	outline:none;
+	font-size:18px;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #000;
+}
