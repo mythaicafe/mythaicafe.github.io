@@ -76,6 +76,7 @@ img.site_bgimage{
 	float:left;
 	position:relative;
 	height:60px;
+	padding:100px 100px;
 	width:0px;
   	background-color: rgba(255,255,255,0.5);
   	text-transform:uppercase;
@@ -89,6 +90,7 @@ img.site_bgimage{
 	float:left;
 	position:relative;
 	height:90px;
+	width:100px;
 	overflow:hidden;
 
 }
@@ -97,9 +99,10 @@ img.site_bgimage{
 	margin-top:60px;
 	display:block;
 	height:90px;
-	padding:0px 10px;
+	padding:0px 100px;
 	text-align:center;
 	line-height:90px;
+	line-width:400px;
 	outline:none;
 	font-size:18px;
 	font-weight:bold;
