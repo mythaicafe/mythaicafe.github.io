@@ -74,7 +74,7 @@ img.site_bgimage{
 	left: 0px;
 	width:100%;
   	background-color: rgba(255,255,255,0.5);
-  	margin:50px;
+  	margin:40px;
   	text-transform: uppercase;
 }
 
@@ -299,17 +299,17 @@ input:checked + .slide-container .nav label { display: none;}
 	display: block;
 	position: absolute;
 	text-align: center;
-	width: 200px;
+	width: 250px;
  	height: 20px;
-  	left: 40%;
+  	left: 30%;
   	top: 0%;
 
 }
 
 .nav-dots .nav-dot {
 	top: -5px;
-	width: 6px;
-	height: 6px;
+	width: 10px;
+	height: 10px;
 	margin: 0 4px;
 	position: relative;
 	border-radius: 100%;
