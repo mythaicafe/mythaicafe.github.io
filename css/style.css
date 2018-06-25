@@ -4,11 +4,11 @@
         margin-top: 0px;
         border-radius: none;
         border: none;
-		    float: right;
+        float: right;
     }
     ul.nav-tabs li{
         margin: 0;
-		align: right;
+    align: right;
     }
     ul.nav-tabs li:first-child{
         border-top: none;
@@ -17,12 +17,12 @@
         margin: 0;
         padding: 0px 0px;
         border-radius: 0;
-		    text-align: right;
+        text-align: right;
 
     }
     ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
         color: #000;
-		text-align: right;
+    text-align: right;
     }
     ul.nav-tabs li:first-child a{
         border-radius: 0px 0px;
@@ -32,10 +32,10 @@
     }
     ul.nav-tabs.affix{
         top: 100px; /* Set the top position of pinned element */
-		align: right;
-		
+    align: right;
+    
     }
-	body, html {
+  body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
@@ -43,12 +43,15 @@
   text-align: center;
 }
 
-.bgimg-1{
+.bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 0.95;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+ }
+  
+.bgimg-1 {
   background-image: url("images/food.jpg");
   height: 100%;
   width:100%;
@@ -100,13 +103,13 @@ h2 {
 }
 
 .imgContainer{
-	position:absolute;
-	width: 100%;
-	
+  position:absolute;
+  width: 100%;
+  
 }
 
 .imgContainer:hover .arrow{
-	opacity:0.3;
+  opacity:0.3;
 }
 
 
@@ -123,7 +126,7 @@ h2 {
     background-color: rgba(255, 255,255, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-	animation-direction: normal;
+  animation-direction: normal;
 
 }
 
@@ -176,17 +179,17 @@ h2 {
 
 
 .site_footer{
-	position:fixed;
-	bottom:0px;
-	left:0px;
-	width:100%;
-	font-size:13px;
-	background:#fff;
-	background-color: rgba(255,255,255,0.7);
-	height:15px;
-	padding-bottom:3px;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  font-size:13px;
+  background:#fff;
+  background-color: rgba(255,255,255,0.7);
+  height:15px;
+  padding-bottom:3px;
         float:right;
-	color:#000;
+  color:#000;
 }
 
 
