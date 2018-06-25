@@ -1,0 +1,202 @@
+    /* Custom Styles */
+    ul.nav-tabs{
+        width: 1%;
+        margin-top: 0px;
+        border-radius: none;
+        border: none;
+		    float: right;
+    }
+    ul.nav-tabs li{
+        margin: 0;
+		align: right;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 0px 0px;
+        border-radius: 0;
+		    text-align: right;
+
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #000;
+		text-align: right;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 0px 0px;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0px 0px;
+    }
+    ul.nav-tabs.affix{
+        top: 100px; /* Set the top position of pinned element */
+		align: right;
+		
+    }
+	body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  text-align: center;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.95;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+  
+.bgimg-1 {
+  background-image: url("images/food.jpg");
+  height: 100%;
+  width:100%;
+}
+
+.heading{
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size:50pt;
+  color:white;
+  opacity: 1;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  opacity: 0.75;
+}
+
+.caption span.border {
+  background-color: NONE;
+  color: #FFF;
+  padding: 10px;
+  font-size: 80px;
+  letter-spacing: 15px;
+}
+
+h2 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 30px "Lato", sans-serif;
+  color: #eee;
+}
+
+
+.arrow{
+  opacity: 1;
+  display: block;
+  position:absolute;
+  top:80%;
+  left:90%;
+  width: 5%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.imgContainer{
+	position:absolute;
+	width: 100%;
+	
+}
+
+.imgContainer:hover .arrow{
+	opacity:0.3;
+}
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255,255,255); /* Black fallback color */
+    background-color: rgba(255, 255,255, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	animation-direction: normal;
+
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.5s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px){
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 0px;
+        right: 0px;
+        background-color:white;
+    }
+  #mn_menu{
+     display: none;
+   }
+}
+
+
+.site_footer{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	font-size:13px;
+	background:#fff;
+	background-color: rgba(255,255,255,0.7);
+	height:15px;
+	padding-bottom:3px;
+        float:right;
+	color:#000;
+}
+
+
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    background-color:white;
+}
